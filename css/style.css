@@ -245,7 +245,7 @@ a {
     margin: 0 auto;
 }
 .presentation {
-    width: 350px;
+    width: 360px;
     height: 210px;
     border-radius: 15px;
     padding: 30px 40px;
@@ -256,7 +256,7 @@ a {
 .presentation p {
     text-decoration: none;
     color: grey;
-    font-size: 16px;
+    font-size: 14px;
 }
 .presentation p a {
     color: darkslategrey;
