@@ -1,0 +1,75 @@
+/* SECTION CURRICULUM */
+.curriculum-container {
+  width: 100%;
+  display: flex;
+  background-color: #667ac8;
+}
+
+.central-col {
+  width: 60%;
+  height: 60vh;
+  background-color: rgb(230, 205, 172);
+  color: rgb(103, 102, 102);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.presentation {
+  width: 360px;
+  height: 210px;
+  border-radius: 15px;
+  padding: 18px 30px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 0.5rem;
+}
+
+.presentation p {
+  text-decoration: none;
+  color: grey;
+  font-size: 16px;
+}
+
+.presentation p a {
+  color: darkslategrey;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.presentation p a:hover {
+  color: rgb(218, 187, 32);
+}
+
+@media (max-width: 500px) {
+  .central-col {
+    width: 80%;
+  }
+  .presentation {
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 18px 30px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .presentation h3, .presentation h4 {
+    font-size: 14px;
+
+  }
+  .presentation p {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+  }
+}

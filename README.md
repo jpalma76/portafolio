@@ -1,10 +1,5 @@
 # repositorio
 nueva version de mi repositorio
 
-se le da nuevo diseño al index y se mejora el rendimiento
-
-Vista movil
-![alt text](image.png)
-
-vista web
-![alt text](image-1.png)
+a contar de ésta versión se eliminó bootstrap para refactorizar todo el código
+se modificaron estilos y semántica para ordenar el código.

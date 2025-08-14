@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,232 +9,294 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <title>Inicio portafolio</title>
     <!-- seccion de estilos -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
-    <nav class="head-layout">
+    <header class="head-layout">
+      <div class="box-header">
         <a href="./index.html">
-            <img id="avatar" src="./images/avatar.jpg" alt="avatar mio" />
+          <img id="avatar" src="./images/avatar.jpg" alt="avatar mio" />
         </a>
-
         <div class="title-container">
-            <p class="first">Portafolio</p>
-            <p class="second">Desarrollador Frontend</p>
+          <p class="title">Portafolio</p>
+          <p class="subtitle">Desarrollador Frontend</p>
         </div>
-    </nav>
+      </div>
+    </header>
+
     <!-- navbar -->
     <nav class="navbar">
-        
-        <ul class="nav-links">
-            <a href="./index.html">
-                <li class="item">
-                    Home
-                </li>
-            </a>
+      <ul class="nav-links">
+        <a href="./index.html">
+          <li class="item">Home</li>
+        </a>
 
-            <a href="./curriculum.html">
-                <li class="item">
-                    Curriculum
-                </li>
-            </a>
+        <a href="./curriculum.html">
+          <li class="item">Curriculum</li>
+        </a>
 
-            <a href="./certificados.html">
-                <li class="item">
-                    Certificados
-                </li>
-            </a>
+        <a href="./certificados.html">
+          <li class="item">Certificados</li>
+        </a>
 
-            <a href="./Skills.html">
-                <li class="item">
-                    Otras Certificaciones
-                </li>
-            </a>
-        </ul>
+        <a href="./Skills.html">
+          <li class="item">Otras Certificaciones</li>
+        </a>
+      </ul>
 
-        <!-- menu desplegable del navbar -->
-        <div class="select-container">
-            <div class="select-with-message">
-                <select name="projects" id="projects" class="form-control select">
-                    <option value="0">Seleccione Proyecto</option>
-                    <option value="1">Portafolio Dark</option>
-                    <option value="2">Portfolio dev</option>
-                    <option value="3">Landing no oficial de la Velada V</option>
-                    <option value="4">Portfolio con Astrojs</option>
-                    <option value="5">Portafolio 3</option>
-                    <option value="6">Landing de la velada IV</option>
-                    <option value="7">ejercicio renderizado con JQuery</option>
-                    <option value="8">Desafio curso React</option>
-                    <option value="9">Repositorio GitHub</option>
-                </select>
-                <div id="message"></div>
-            </div>
-            <button class="btn btn-success btn-md" type="button" onclick="visitar()">
-                Ir
-            </button>
+      <!-- menu desplegable del navbar -->
+      <div class="select-container">
+
+        <div class="select-with-message">
+          <select name="projects" id="projects" class="select">
+            <option value="0">Seleccione Proyecto</option>
+            <option value="1">Portafolio Dark</option>
+            <option value="2">Portfolio dev</option>
+            <option value="3">Landing no oficial de la Velada V</option>
+            <option value="4">Portfolio con Astrojs</option>
+            <option value="5">Portafolio 3</option>
+            <option value="6">Landing de la velada IV</option>
+            <option value="7">ejercicio renderizado con JQuery</option>
+            <option value="8">Desafio curso React</option>
+            <option value="9">Repositorio GitHub</option>
+          </select>
+          <div id="message"></div>
         </div>
+        
+        <button
+          class="btn-go"
+          type="button"
+          onclick="visitar()"
+        >
+          Ir
+        </button>
+      </div>
+
     </nav>
 
     <div class="index-container">
+      <section class="home-card">
+        <div class="card-body text-center">
+          <h3>Sobre mí</h3>
+          <picture class="image-container">
+            <img id="avatar2" src="./images/foto-mia.jpeg" alt="" />
+          </picture>
 
-        <section class="home-card">
-            <div class="card-body text-center">
-                <h3>Sobre mí</h3>
-                <picture class="image-container">
-                    <img id="avatar2" src="./images/foto-mia.jpeg" alt="" />
-                </picture>
+          <h4 class="card-title">Juan Palma Alvarez</h4>
+          <h6 class="card-text">Programador Web Junior</h6>
+          <p>
+            Soy desarrollador Frontend sin experiencia laboral, pero cuento
+            varios proyectos sacados de Youtube, proyectos personales y los
+            realizados en los diferentes cursos de desarrollo web que he
+            realizado, adquiriendo la experiencia necesaria para poder cumplir
+            con los requisitos para ser un buen Desarrollador Frontend.
+          </p>
+          <p>
+            Actualmente me encuentro buscando trabajo como Desarrollador
+            Frontend.
+          </p>
 
-                <h4 class="card-title">Juan Palma Alvarez</h4>
-                <h6 class="card-text">Programador Web Junior</h6>
-                <p>
-                    Soy desarrollador Frontend sin experiencia laboral, pero he realizado varios proyectos sacados de Youtube, proyectos personales y los realizados en los diferentes cursos de desarrollo web que he realizado, adquiriendo la experiencia necesaria para poder cumplir con los requisitos para ser un buen desarrollador.
-                </p>
-                <p>
-                    Actualmente me encuentro buscando trabajo como Desarrollador Frontend.
-                </p>
+          <h3 class="subtitle-skills">Mis skills son:</h3>
 
-                <h3 class="subtitle-skills">Mis skills son:</h3>
-                
-                <section class="section-skills">
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/Html.svg" alt="icono de html">
-                        HTML
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/CSS3.svg" alt="icono de html">
-                        CSS
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/Javascript.svg" alt="icono de html">
-                        JAVASCRIPT
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/react.svg" alt="icono de html">
-                        REACTJS
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/astro.svg" alt="icono de html">
-                        ASTRO
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/tailwind.svg" alt="icono de html">
-                        TAILWIND
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/bootstrap.svg" alt="icono de html">
-                        BOOTSTRAP
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/git.svg" alt="icono de html">
-                        GIT
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/github.svg" alt="icono de html">
-                        GITHUB
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/nodejs.svg" alt="icono de html">
-                        NODE
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/express.svg" alt="icono de html">
-                        EXPRESS
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/php.svg" alt="icono de html">
-                        PHP
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/mysql.svg" alt="icono de html">
-                        MYSQL
-                    </span>
-
-                    <span class="span-skill">
-                        <img class="icono" src="./Icons/json.svg" alt="icono de html">
-                        JSON
-                    </span>
-
-                    <span class="span-skill size:40px">
-                        <img class="icono" src="./Icons/sqlite.svg" alt="icono de html">
-                        SQLITE
-                    </span>
-
-
-                </section>
-
-                <section class="my-3 contacto">
-                    <h3 class="my-3 text-dark subtitle-skills">Contacto :</h3>
-                    <!-- ICONOS DE CONTACTO -->
-                    <ul class="links">
-                        <!-- LINKEDIN -->
-                        <li>
-                            <a href="https://www.linkedin.com/in/juan-palma-alvarez/" target="_blank" rel="noopener noreferrer">
-                                <img src="./rrss/linkedin.svg" alt="Icono de LinkedIn" class="icon-social text-dark">
-                            </a>
-                        </li>
-                        <!-- TWITTER -->
-                        <li>
-                            <a href="https://twitter.com/JPALMA76" target="_blank" rel="noopener noreferrer">
-                                <img src="./rrss/x.svg" alt="Icono de twitter" class="icon-social text-dark">
-                            </a>
-                        </li>
-                        <!-- GITHUB -->
-                        <li>
-                            <a href="https://github.com/jpalma76" target="_blank" rel="noopener noreferrer">
-                                <img src="./rrss/github.svg" alt="Icono de GitHub" class="icon-social text-dark">
-                            </a>
-                        </li>
-                        <!-- INSTAGRAM -->
-                        <li>
-                            <a href="https://www.instagram.com/jpalma76" target="_blank" rel="noopener noreferrer">
-                                <img src="./rrss/instagram.svg" alt="Icono de Instagram" class="icon-social text-dark">
-                            </a>
-                        </li>
-                        <!-- GMAIL -->
-                        <li>
-                            <a href="mailto:juan.palma.alvarez@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <img src="./rrss/gmail.svg" alt="Icono de Gmail" class="icon-social text-dark">
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </section>
+          <!-- Badges de Tecnologías -->
+          <section class="section-skills">
+            <div class="span-skill">
+              <img class="icono" src="./Icons/Html.svg" alt="icono de html" />
+              HTML
             </div>
-        </section>
 
+            <div class="span-skill">
+              <img class="icono" src="./Icons/CSS3.svg" alt="icono de html" />
+              CSS
+            </div>
+
+            <div class="span-skill">
+              <img
+                class="icono"
+                src="./Icons/Javascript.svg"
+                alt="icono de html"
+              />
+              JAVASCRIPT
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/react.svg" alt="icono de html" />
+              REACTJS
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/astro.svg" alt="icono de html" />
+              ASTRO
+            </div>
+
+            <div class="span-skill">
+              <img
+                class="icono"
+                src="./Icons/tailwind.svg"
+                alt="icono de html"
+              />
+              TAILWIND
+            </div>
+
+            <div class="span-skill">
+              <img
+                class="icono"
+                src="./Icons/bootstrap.svg"
+                alt="icono de html"
+              />
+              BOOTSTRAP
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/git.svg" alt="icono de html" />
+              GIT
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/github.svg" alt="icono de html" />
+              GITHUB
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/nodejs.svg" alt="icono de html" />
+              NODE
+            </div>
+
+            <div class="span-skill">
+              <img
+                class="icono"
+                src="./Icons/express.svg"
+                alt="icono de html"
+              />
+              EXPRESS
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/php.svg" alt="icono de html" />
+              PHP
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/mysql.svg" alt="icono de html" />
+              MYSQL
+            </div>
+
+            <div class="span-skill">
+              <img class="icono" src="./Icons/json.svg" alt="icono de html" />
+              JSON
+            </div>
+
+            <div class="span-skill size:40px">
+              <img class="icono" src="./Icons/sqlite.svg" alt="icono de html" />
+              SQLITE
+            </div>
+          </section>
+
+          <section id="contact" class="contacto">
+            <h3 class="subtitle-skills">Contacto :</h3>
+            <!-- ICONOS DE CONTACTO -->
+            <ul class="links">
+              <!-- LINKEDIN -->
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/juan-palma-alvarez/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./rrss/linkedin.svg"
+                    alt="Icono de LinkedIn"
+                    class="icon-social text-dark"
+                  />
+                </a>
+              </li>
+
+              <!-- TWITTER -->
+              <li>
+                <a
+                  href="https://twitter.com/JPALMA76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./rrss/x.svg"
+                    alt="Icono de twitter"
+                    class="icon-social text-dark"
+                  />
+                </a>
+              </li>
+              <!-- GMAIL -->
+              <li>
+                <a
+                  href="mailto:juan.palma.alvarez@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./rrss/gmail.svg"
+                    alt="Icono de Gmail"
+                    class="icon-social text-dark"
+                  />
+                </a>
+              </li>
+              <!-- INSTAGRAM -->
+              <li>
+                <a
+                  href="https://www.instagram.com/jpalma76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./rrss/instagram.svg"
+                    alt="Icono de Instagram"
+                    class="icon-social text-dark"
+                  />
+                </a>
+              </li>
+
+              <!-- GITHUB -->
+              <li>
+                <a
+                  href="https://github.com/jpalma76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./rrss/github.svg"
+                    alt="Icono de GitHub"
+                    class="icon-social text-dark"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
     </div>
 
     <footer class="footer-container">
-        
-        <div class="contact">
-            <div class="email">
-                Email:
-                <a href="mailto:juan.palma.alvarez@gmail.com">
-                    juan.palma.alvarez@gmail.com</a>
-            </div>
+      <div class="contact">
+        <div class="email">
+          Email:
+          <a href="mailto:juan.palma.alvarez@gmail.com">
+            juan.palma.alvarez@gmail.com</a
+          >
         </div>
+      </div>
     </footer>
 
     <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/cursos.js"></script>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
