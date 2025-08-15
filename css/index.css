@@ -28,6 +28,10 @@
   padding: 30px;
 }
 
+.subtitle {
+  color: #444;
+}
+
 .card-body p {
   width: 80%;
   color: rgb(103, 102, 102);
@@ -54,6 +58,18 @@
 
 .card-text {
   margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.card-text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
 }
 
 /* Grid de Skills */
