@@ -40,9 +40,9 @@
 }
 
 .select-container {
-    width: 350px;
+    width: 360px;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .select-container select {
