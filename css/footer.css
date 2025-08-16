@@ -12,12 +12,12 @@
 }
 
 .email a {
+    color: white;
     font-style: italic;
-    color: goldenrod;
     text-decoration: none; 
 }
 
 .email a:hover {
-    color: white;
+    color: goldenrod;
     text-decoration: underline; 
 }

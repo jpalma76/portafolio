@@ -24,17 +24,12 @@
   align-items: center;
   margin: 0 auto;
   background-color: rgb(230, 205, 172);
-  color: #444;
+  color: #222;
   padding: 30px;
-}
-
-.subtitle {
-  color: #444;
 }
 
 .card-body p {
   width: 80%;
-  color: rgb(103, 102, 102);
   text-align: center;
   padding: 10px 0;
   line-height: 1.8;
@@ -63,13 +58,11 @@
 .card-title {
   font-size: 18px;
   font-weight: 700;
-  color: #000;
 }
 
 .card-text {
   font-weight: 500;
   font-size: 14px;
-  color: #000;
 }
 
 /* Grid de Skills */
@@ -101,13 +94,14 @@
 }
 
 .section-skills .span-skill {
-  color: #222;
   width: 130px;
   height: 30px;
   border-radius: 25px;
   border: 1px solid;
   background-color: rgb(235, 205, 205);
   display: flex;
+  font-weight: 500;
+  font-style: italic;
   font-size: 12px;
   align-items: center;
   justify-content: center;
@@ -138,7 +132,6 @@
 }
 
 .contacto a {
-  color: rgb(103, 102, 102);
   list-style: none;
   text-decoration: none;
   font-size: 17px;

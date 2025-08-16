@@ -9,7 +9,6 @@
   width: 60%;
   height: 60vh;
   background-color: rgb(230, 205, 172);
-  color: rgb(103, 102, 102);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +22,6 @@
   padding: 18px 30px;
   border: 1px solid grey;
   border-radius: 15px;
-  color: #000;
   display: flex;
   flex-direction: column;
   font-size: 16px;
@@ -32,18 +30,16 @@
 
 .presentation p {
   text-decoration: none;
-  color: grey;
   font-size: 16px;
 }
 
 .presentation p a {
-  color: darkslategrey;
   text-decoration: none;
   font-weight: bold;
 }
 
 .presentation p a:hover {
-  color: rgb(218, 187, 32);
+  color: goldenrod;
 }
 
 @media (max-width: 500px) {
@@ -57,7 +53,6 @@
     padding: 18px 30px;
     border: 1px solid grey;
     border-radius: 15px;
-    color: #000;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -69,7 +64,6 @@
   }
   .presentation p {
     text-decoration: none;
-    color: grey;
     font-size: 14px;
   }
 }
