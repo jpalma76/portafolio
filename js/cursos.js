@@ -150,21 +150,40 @@ let cursos = [
 let card = document.getElementById("certificados-container");
 
 cursos.forEach((curso) => {
-  let item = `
-  <a href="${curso.url}" target="_blank" rel="noopener noreferrer">
-    <div class="grid-item">
-      <div class="card-item">
-          <img class="img-cert" src="${curso.image}" alt="${curso.name}">
-      </div>
+  const p = document.createElement("p");
 
-      <div class="nombre-curso">
-        <p class="img-name">${curso.name}</p>
-      </div>
-    </div>
-  </a>
-    `;
+  const link = document.createElement("a");
+  link.href = curso.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
 
-  let parrafo = document.createElement("p");
-  parrafo.innerHTML = item;
-  card.appendChild(parrafo);
+  const gridItem = document.createElement("div");
+  gridItem.classList.add("grid-item");
+
+  const cardItem = document.createElement("div");
+  cardItem.classList.add("card-item");
+
+  const img = document.createElement("img");
+  img.classList.add("img-cert");
+  img.src = curso.image;
+  img.alt = curso.name;
+
+  cardItem.appendChild(img);
+
+  const nombreCurso = document.createElement("div");
+  nombreCurso.classList.add("nombre-curso");
+
+  const pName = document.createElement("p");
+  pName.classList.add("img-name");
+  pName.textContent = curso.name;
+
+  nombreCurso.appendChild(pName);
+
+  gridItem.appendChild(cardItem);
+  gridItem.appendChild(nombreCurso);
+
+  link.appendChild(gridItem);
+  p.appendChild(link);
+
+  card.appendChild(p);
 });
