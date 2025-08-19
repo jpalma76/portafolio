@@ -41,15 +41,22 @@ li {
     transition: color 0.2s ease-in-out;
 }
 
+.label {
+    width: 380px;
+    color: white;
+    font-size: 14px;
+}
+
 .select-container {
-    width: 360px;
+    width: 325px;
     display: flex;
-    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .select-container select {
-    width: auto;
-    height: 35px;
+    width: 270px;
+    height: 20px;
     border-radius: 4px;
     color: blue;
     font-weight: 700;
@@ -63,14 +70,15 @@ li {
 
 .btn-go {
     display: flex;
-    width: 35px;
-    height: 35px;
+    width: 60px !important;
+    height: 40px;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     background-color: rgb(35, 247, 35);
     color: white;
     font-weight: 700;
+    margin-left: 5px;
 }
 
 @media (max-width: 900px) {
