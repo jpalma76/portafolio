@@ -48,15 +48,15 @@ li {
 }
 
 .select-container {
-    width: 325px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .select-container select {
-    width: 270px;
-    height: 20px;
+    width: 290px;
+    height: 30px;
     border-radius: 4px;
     color: blue;
     font-weight: 700;
@@ -70,9 +70,9 @@ li {
 
 .btn-go {
     display: flex;
-    width: 60px !important;
-    height: 40px;
-    border-radius: 5px;
+    width: 70px !important;
+    height: 47px;
+    border-radius: 6px;
     justify-content: center;
     align-items: center;
     background-color: rgb(35, 247, 35);
@@ -113,6 +113,6 @@ li {
         background-color: blueviolet;
     }
     .select-container {
-        margin-left: 8.5%;
+        margin-left: 5%;
     }
 }
